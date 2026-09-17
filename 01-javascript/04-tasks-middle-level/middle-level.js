@@ -231,3 +231,66 @@
 
 "======================================";
 "======================================";
+// const orders = [
+//   { id: 1, status: "paid", total: 100 },
+//   { id: 2, status: "cancelled", total: 200 },
+//   { id: 3, status: "paid", total: 300 },
+//   { id: 4, status: "pending", total: 150 },
+//   { id: 5, status: "paid", total: 50 },
+// ];
+
+// // Напиши функцію:
+
+// function getOrderStats(orders) {
+//   const totalOrders = orders.reduce(
+//     (acc, order) => {
+//       acc.totalOrders += 1;
+//       if (order.status === "paid") {
+//           acc.paidOrders += 1;
+//            acc.paidAmount += order.total;
+//       }
+
+//       return acc;
+//     },
+//     { totalOrders: 0, paidOrders: 0, paidAmount: 0 },
+//   );
+
+//   return totalOrders;
+// }
+
+// console.log(getOrderStats(orders));
+"======================================";
+"======================================";
+const orders = [
+  { id: 1, userId: 101, status: "paid", total: 120 },
+  { id: 2, userId: 102, status: "paid", total: 80 },
+  { id: 3, userId: 101, status: "cancelled", total: 200 },
+  { id: 4, userId: 103, status: "paid", total: 150 },
+  { id: 5, userId: 101, status: "paid", total: 300 },
+  { id: 6, userId: 102, status: "pending", total: 100 },
+  { id: 7, userId: 103, status: "paid", total: 50 },
+];
+
+// Напиши функцію:
+
+function getCustomerStats(orders) {}
+
+// Вона повинна повернути:
+
+// {
+//   101: {
+//     orders: 3,
+//     paidOrders: 2,
+//     spent: 420
+//   },
+//   102: {
+//     orders: 2,
+//     paidOrders: 1,
+//     spent: 80
+//   },
+//   103: {
+//     orders: 2,
+//     paidOrders: 2,
+//     spent: 200
+//   }
+// }
